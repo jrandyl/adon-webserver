@@ -2,5 +2,373 @@ package fragments
 
 
 templ Index() {
-    <h1>HOMEPAGE</h1>
+    <section id="home" class="home">
+        <div class="image-container">
+            <img src="/assets/151257416.jpg" />
+        </div>
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="/assets/develi-logo.svg" />
+                    <p>Develi</p>
+                </div>
+                <div class="link-container">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services <i class="fa-solid fa-chevron-down"></i></a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <div class="social-container">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="banner">
+                    <p class="one">
+                        Software made with love.
+                    </p>
+                    <p class="two">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                        accusantum doloremque laudantium
+                    </p>
+                    <div class="buttons">
+                        <span class="b1">LEARN MORE</span>
+                        <span class="b2"><i class="fa-solid fa-paper-plane"></i>GET FREE QOUTE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advertisement">
+        <div hx-get="/laptop" hx-trigger="intersect once">
+            
+        </div>
+        <div hx-get="/description" hx-trigger="intersect once">
+            
+        </div>
+    </section>
+    <section class="features">
+        <div class="upper">
+            
+        </div>
+        <div class="lower">
+            
+        </div>
+        <div class="content">
+            <div class="container">
+                <div hx-get="/content" hx-trigger="intersect once" hx-swap="outerHTML">
+                    
+                </div>
+                <div class="cards">
+                    <div hx-get="/efficient" hx-trigger="intersect once" hx-swap="outerHTML">
+                        
+                    </div>
+                    <div hx-get="/secure" hx-trigger="intersect once" hx-swap="outerHTML">
+                        
+                    </div>
+                    <div hx-get="/support" hx-trigger="intersect once" hx-swap="outerHTML">
+                        
+                    </div>
+                </div>
+            </div>
+            <div hx-get="/iphone" hx-trigger="intersect once" hx-swap="outerHTML">
+                
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="images">
+            <img class="image" src="/assets/195877646.jpg" />
+        </div>
+        <div class="container">
+            <p class="header">
+                Why Wait?
+            </p>
+            <div class="body">
+                <p class="p1">
+                    Get a Free Quote or
+                </p>
+                <p class="p2">
+                    Call <i class="fa-solid fa-phone" style="color: #1b6ef2;"></i><span>123 56 7890</span>
+                </p>
+            </div>
+        </div>
+        <form class="form">
+            <div class="group">
+                <input class="field" id="name" type="text" placeholder="Name" />
+                <input class="field" id="email" type="text" placeholder="Email" />
+            </div>
+            <div class="group">
+                <input class="field" id="company" type="text" placeholder="Company" />
+                <input class="field" id="phone" type="text" placeholder="Phone" />
+            </div>
+            <div class="group">
+                <input class="field" id="website" type="text" placeholder="Website" />
+                <input class="field" id="service" type="text" placeholder="Service" />
+            </div>
+            <div type="button" class="button"><i class="fa-solid fa-paper-plane"></i>Get Free Quote</div>
+        </form>
+    </section>
+    <section class="testimonials">
+        <p class="header">
+            Testimonials
+        </p>
+        <div class="container">
+            <div class="prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="card">
+                <p class="content">
+                    <span class="open-qoute"><i class="fa-solid fa-quote-left"></i></span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <span class="close-qoute"><i class="fa-solid fa-quote-right"></i></span>
+                </p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="customer">
+                    <div class="jane">
+                    </div>
+                    <div class="details">
+                        <p class="name">
+                            Jane Doe
+                        </p>
+                        <p class="type">
+                            Customer
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="current">
+            </div>
+            <div class="next">
+            </div>
+            <div class="next">
+            </div>
+            <div class="next">
+            </div>
+            <div class="next">
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="header">
+            <p class="content">
+                Our Blog
+            </p>
+        </div>
+        <div class="container">
+            <div class="prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="date">
+                        <p class="day">
+                            03
+                        </p>
+                        <p class="month">
+                            March
+                        </p>
+                    </div>
+                    <div class="news">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </div>
+                    <div class="more">
+                        <p class="read">
+                            Read More 
+                        </p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="date">
+                        <p class="day">
+                            03
+                        </p>
+                        <p class="month">
+                            April
+                        </p>
+                    </div>
+                    <div class="news">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </div>
+                    <div class="more">
+                        <p class="read">
+                            Read More 
+                        </p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="date">
+                        <p class="day">
+                            03
+                        </p>
+                        <p class="month">
+                            March
+                        </p>
+                    </div>
+                    <div class="news">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </div>
+                    <div class="more">
+                        <p class="read">
+                            Read More 
+                        </p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="date">
+                        <p class="day">
+                            03
+                        </p>
+                        <p class="month">
+                            April
+                        </p>
+                    </div>
+                    <div class="news">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </div>
+                    <div class="more">
+                        <p class="read">
+                            Read More 
+                        </p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="image">
+            
+        </div>
+        <p class="header">
+            Sign Up for Our Newsletter
+        </p>
+        <p class="content">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blandtiis praesentium voluptatem deleniti atque
+        </p>
+        <form class="form">
+            <input class="field" id="email" type="text" placeholder="Email" />
+            <div class="submit" type="button"><i class="fa-solid fa-paper-plane"></i>Sign Up</div>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="details">
+            <div class="card">
+                <div class="logo">
+                    <img src="/assets/develi-logo.svg" />
+                    <p>Develi</p>
+                </div>
+                <p class="content">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blandtiis praesentium voluptatem deleniti atque corrupti quos dolores et quas
+                </p>
+                <div class="social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="contact-us">
+                <p class="header">
+                    Contact Us
+                </p>
+                <div class="location">
+                    <div class="marker">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p class="address">
+                        123 Building, Street Name, City, Country name 123 56 7890 info@
+                    </p>
+                </div>
+                <div class="phone">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <p class="number">
+                        1234567890
+                    </p>
+                </div>
+                <div class="email">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p class="address">
+                        info@develi.com
+                    </p>
+                </div>
+            </div>
+            <div class="links">
+                <p class="header">
+                    Links
+                </p>
+                <div class="link">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <p>
+                        Software Development
+                    </p>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <p>
+                        Our Process
+                    </p>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <p>
+                        Company History
+                    </p>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <p>
+                        Portfolio
+                    </p>
+                </div>
+                <div class="link">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <p>
+                        blog
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="year">
+                © 2019 Develi Software. All Rights Reserved
+            </p>
+            <div class="container">
+                <div class="privacy">
+                    Privacy Policy 
+                </div>
+                <div class="circle">
+                </div>
+                <div class="terms">
+                    Terms and Conditions
+                </div>
+            </div>
+        </div>
+    </footer>
 }
