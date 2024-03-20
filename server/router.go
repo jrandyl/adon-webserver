@@ -10,6 +10,7 @@ func (s *Server) SetupRouter() {
 	s.router.Use(middleware.Logger())
 	s.router.Use(middleware.Recover())
 	s.router.Use(middleware.Secure())
+	s.router.Use(middleware.RateLimiter(middleware.NewRateLimiterMemoryStore(1000)))
 
 	client.RegisterHandler(s.router)
 
